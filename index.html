@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try to Catch a Banana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--
+  VAROVANIE: Prílišné vystavenie kódu založenému na banánoch môže spôsobiť preťaženie draslíkom.
+  Ak príznaky pretrvávajú, obráťte sa na svojho správcu systému.
+-->
+<div class="container">
+    <div class="container">
+        <h1>Unhandled SpoilerException</h1>
+        <p>
+            A mysterious error has occurred.<br />
+            Solve it or forever remain in the unknown.
+        </p>
+    </div>
+    <button id="startButton">TRY</button>
+
+    <div id="step1" class="hidden">
+        <p id="instructions"><code>document.write('B' + 'a' + + 'a' + 'a');</code></p>
+        <p id="prime" class="feedback"></p>
+        <p id="year" class="feedback"></p>
+        <p id="coordinates" class="feedback"></p>
+        <input type="text" id="bananaInput" placeholder="Type your answer...">
+        <br>
+        <button id="catchButton" class="hidden">Catch Banana</button>
+    </div>
+    <button id="showQrButton" class="hidden merge-btn">Merge Request</button>
+
+    <div id="qrModal" class="modal hidden">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <p>🎉 Gratulujeme! Boli ste pridaný na zoznam hostí. Tešíme sa na vás! Viac info tu:</p>
+            <img id="qrImage" src="QRkod.png" alt="QR Code" width="300" height="300">
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
