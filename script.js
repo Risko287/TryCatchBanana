@@ -66,7 +66,7 @@ function handleStep1(value) {
 
 function handleStep2(value) {
     if (!value.includes("2025")) {
-        year.textContent = "Now add 7e9 in decimal.";
+        year.textContent = "Now add 0x7E9 in decimal.";
         year.classList.remove("correct");
         return false;
     }
